@@ -66,9 +66,8 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 150px auto;
   width: 90%;
-  margin-top: 150px;
   height: 730px;
 }
 .convers{
@@ -102,4 +101,74 @@
 }
 .dassler-img{
   width: 80%;
+}
+
+/*Nike*/
+.Three{
+  margin: 0 auto;
+  width: 90%;
+  height: 730px;
+  display: flex;
+  flex-direction: column;
+}
+.nike{
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: row;
+}
+.jordan{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 80px;
+}
+.txt{
+  width: 50%;
+}
+.txt h2{
+  margin-bottom: 30px;
+}
+.txt p{
+  margin-top: 15px;
+}
+.nike-shoe-img{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.nike-shoe-img img{
+  width: 50%;
+}
+.jordan-shoe-img{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+.jordan-shoe-img img{
+  width: 58%;
+}
+/*End*/
+.Four{
+  margin: 100px 0px;
+  height: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.last-shoe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-shoe p{
+  text-align: center;
+  width: 60%;
+}
+.sneaker{
+  margin-top: 70px;
+  width: 35%;
 }

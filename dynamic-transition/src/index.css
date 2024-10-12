@@ -28,9 +28,14 @@ body{
 h2{
   font-family: "Bropella",sans-serif;
   color: #6E4E3A;
-  font-size: 70px;
+  font-size: 76px;
 }
 
+h3{
+  font-family: "Helvetica Neue",sans-serif;
+  font-size: 30px;
+  color: #7A7979;
+}
 p{
   font-family: 'Helvetica',sans-serif;
   font-size: 17px;

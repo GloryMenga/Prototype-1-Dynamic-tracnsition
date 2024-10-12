@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Home */
+.intro{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+}
+.background-first-shoe h1{
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 180px;
+  color: #8D8D8D;
+  opacity: 40%;
+}
+.cover{
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.top img{
+  width: 78%;
+}
+.aj1{
+  width: 38%;
 }
 
-.App-link {
-  color: #61dafb;
+/*Plimsoll*/
+.One{
+  margin-top: 100px;
+  height: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-shoe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first-shoe p{
+  text-align: center;
+  width: 60%;
+}
+.plimsoll{
+  margin-top: 70px;
+  width: 38%;
 }

@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Bropella';
+  src: url('./fonts/Bropella.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url(./fonts/HelveticaNeueBlack.otf);
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url(./fonts/Helvetica.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(./assets/Background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2{
+  font-family: "Bropella",sans-serif;
+  color: #6E4E3A;
+  font-size: 70px;
+}
+
+p{
+  font-family: 'Helvetica',sans-serif;
+  font-size: 18px;
 }

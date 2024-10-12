@@ -59,3 +59,47 @@
   margin-top: 70px;
   width: 38%;
 }
+
+/*Convers & Dassler*/
+.Two{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 150px;
+  height: 730px;
+}
+.convers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+}
+.dassler{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+}
+.convers p{
+  text-align: center;
+  margin-top: 50px;
+  width: 60%;
+}
+.dassler p{
+  text-align: center;
+  width: 60%;
+}
+.dassler h2{
+  font-size: 120px;
+}
+.convers-img{
+  width: 60%;
+}
+.dassler-img{
+  width: 80%;
+}

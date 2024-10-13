@@ -75,7 +75,7 @@
 
 /*Plimsoll*/
 .One{
-  margin-top: 100px;
+  margin-top: -100px;
   height: 730px;
   display: flex;
   flex-direction: column;
@@ -97,7 +97,9 @@
   margin-top: 70px;
   width: 38%;
 }
-
+.plimsvg{
+  z-index: -1;
+}
 /*Convers & Dassler*/
 .Two{
   display: flex;

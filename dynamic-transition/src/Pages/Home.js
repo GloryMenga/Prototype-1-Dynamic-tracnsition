@@ -5,9 +5,12 @@ import Dassler from '../assets/Dassler.png';
 import Waffle from '../assets/waffle.png';
 import Jordan from '../assets/jordans.png';
 import Nocta from '../assets/Nocta.png';
+import Plimsollshoe from '../components/Plimsollshoe.js';
 import Title  from '../components/Title.js';
 import Sneakers from '../components/Sneakers.js';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { motion } from "framer-motion";
+import Typewriter from 'typewriter-effect';
 
 
 function Home() {
@@ -25,10 +28,44 @@ function Home() {
                 <ParallaxLayer offset={0} speed={0.3}>
                     <Title />
                 </ParallaxLayer>
-                <ParallaxLayer offset={0.3} speed={0.5}>
+                <ParallaxLayer offset={0.3} speed={0.6}>
                     <img src={Aj1} alt="Air jordan 1" className='aj1'/>
                 </ParallaxLayer>   
             </section>
+            <ParallaxLayer offset={1} speed={0.9}>
+                <section className='One'>
+                    <div className='first-shoe'>
+                    <h2>
+                        <Typewriter
+                        options={{
+                            autoStart: true,
+                            loop: true, 
+                        }}
+                        onInit={(typewriter) => {
+                            typewriter
+                              .typeString('1800s') 
+                              .pauseFor(3000) 
+                              .deleteAll() 
+                              .typeString('Plimsoll by Liverpool Company') 
+                              .pauseFor(4000) 
+                              .start(); 
+                          }}
+                        />
+                    </h2>
+                    <motion.img 
+                        src={Plimsoll} 
+                        alt="plimsoll" 
+                        className='plimsoll'
+                        whileHover={{ scale: 1.4, rotate: 360, transition: { duration: 0.6 }}}
+                        
+                    />
+                    <p>The first "sneaker" originated from the Plimsoll shoe, introduced by the Liverpool Rubber Company. These rubber-soled shoes had a canvas upper and were primarily used for sports and leisure. They were called "plimsolls" because of the horizontal line on the sole, which resembled the Plimsoll line on a ship’s hull.</p>
+                    </div>
+                </section>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0.98} speed={0.5} className='plimsvg'>
+                <Plimsollshoe />
+            </ParallaxLayer>
             {/* <section className='intro'>
                 <div className='background-first-shoe'>
                     <h1>AIR JORDAN 1</h1>

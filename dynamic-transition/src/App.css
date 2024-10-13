@@ -24,13 +24,42 @@
 }
 .top{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
   padding-top: 50px;
+}
+.top h1{
+  font-family: "Bropella",sans-serif;
+  color: #6E4E3A;
+  font-size: 80px;
+  letter-spacing: 4px;
+  display: inline;
+  position: relative;
+}
+.top h1::after {
+  content: ""; 
+  display: inline-block;
+  width: 3px; 
+  height: 1em; 
+  background-color: #6E4E3A; 
+  margin-left: 5px;
+  position: absolute;
+  right: -10px; 
+  top: 0;
+  animation: blink 1s step-end infinite; 
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 .top img{
   width: 78%;
 }
+
 .aj1{
   width: 38%;
 }
@@ -148,6 +177,7 @@
 .jordan-shoe-img img{
   width: 58%;
 }
+
 /*End*/
 .Four{
   margin: 100px 0px;

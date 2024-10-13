@@ -1,4 +1,3 @@
-import Top from '../assets/Title-Page.svg';
 import Aj1 from '../assets/AJ1.png';
 import Plimsoll from '../assets/pimsolls.png';
 import Convers from '../assets/Convers.png';
@@ -6,6 +5,7 @@ import Dassler from '../assets/Dassler.png';
 import Waffle from '../assets/waffle.png';
 import Jordan from '../assets/jordans.png';
 import Nocta from '../assets/Nocta.png';
+import Title  from '../components/Title.js';
 
 function Home() {
 
@@ -16,9 +16,7 @@ function Home() {
                 <h1>AIR JORDAN 1</h1>
             </div>
             <div className='cover'>
-                <div className='top'>
-                    <img src={Top} alt="title"/>
-                </div>
+                <Title />
                 <img src={Aj1} alt="Air jordan 1" className='aj1'/>
                 <div>See More</div>
             </div>

@@ -5,7 +5,10 @@ import Dassler from '../assets/Dassler.png';
 import Waffle from '../assets/waffle.png';
 import Jordan from '../assets/jordans.png';
 import Nocta from '../assets/Nocta.png';
-import Plimsollshoe from '../components/Plimsollshoe.js';
+import Plimsollsvg from '../assets/Plimsollsvg.svg';
+import Conversicon from '../assets/Conversicon.svg';
+import Jordanicon from '../assets/Jordanicon.svg';
+import Jordan5 from '../assets/Jordan5.svg';
 import Title  from '../components/Title.js';
 import Sneakers from '../components/Sneakers.js';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -64,7 +67,7 @@ function Home() {
                 </section>
             </ParallaxLayer>
             <ParallaxLayer offset={0.98} speed={0.4} className='plimsvg'>
-                <Plimsollshoe />
+                <img src={Plimsollsvg} alt="plimsoll" className='plimsoll'/>
             </ParallaxLayer>
             <ParallaxLayer offset={1.99} speed={0.9}>
                 <section className='Two'>
@@ -106,6 +109,9 @@ function Home() {
                             <p>In Germany, Adolf "Adi" Dassler founded the company that would become Adidas. His goal was to create high-performance athletic shoes, and in 1928, athletes wore Dassler shoes in the Olympics. The brand later became globally recognized for its innovative designs.</p>
                         </div>
                 </section>
+            </ParallaxLayer>
+            <ParallaxLayer offset={1.5} speed={0.7}>
+                <img src={Conversicon} alt="Convers" className='conversicon'/>
             </ParallaxLayer>
             <ParallaxLayer offset={2.8} speed={0.9}>
                 <section className='Three'>
@@ -171,6 +177,9 @@ function Home() {
                     </div>
                 </section>
             </ParallaxLayer>
+            <ParallaxLayer offset={2} speed={0.8} className='jordanicon'>
+                <img src={Jordanicon} alt="Jordan icon"/>
+            </ParallaxLayer>
             <ParallaxLayer offset={3.2} speed={0.9}>
                 <section className='Four'>
                     <div className='last-shoe'>
@@ -200,6 +209,9 @@ function Home() {
                         <p>By the 2010s, sneaker culture exploded globally, fueled by collaborations between brands, designers, and artists. The rise of sneaker resale platforms, where limited-edition shoes could sell for thousands, turned sneakers into highly sought-after collectibles.</p>
                     </div>
                 </section>
+            </ParallaxLayer>
+            <ParallaxLayer offset={2.9} speed={0.6} className='jordan5'>
+                <img src={Jordan5} alt="plimsoll"/>
             </ParallaxLayer>
         </Parallax>
     </>

@@ -74,6 +74,9 @@
 }
 
 /*Plimsoll*/
+.conversicon{
+  margin-left: 63%;
+}
 .One{
   margin-top: -100px;
   height: 730px;
@@ -146,7 +149,13 @@
 .dassler-img{
   width: 70%;
 }
-
+.jordanicon{
+  z-index: -2;
+  margin-left: -10%;
+}
+.jordanicon img{
+  width: 60%;
+}
 /*Nike*/
 .Three{
   margin: 0 auto;
@@ -180,6 +189,7 @@
   display: flex;
   justify-content: flex-end;
   width: 50%;
+  z-index: 4;
 }
 .nike-shoe-img img{
   width: 50%;
@@ -188,6 +198,7 @@
   display: flex;
   justify-content: flex-start;
   width: 50%;
+  z-index: 4;
 }
 .jordan-shoe-img img{
   width: 58%;
@@ -215,4 +226,8 @@
 .sneaker{
   margin-top: 70px;
   width: 35%;
+}
+.jordan5{
+  z-index: -2;
+  margin-left: 54%;
 }

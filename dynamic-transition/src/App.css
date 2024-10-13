@@ -97,13 +97,17 @@
   margin-top: 70px;
   width: 38%;
 }
+.plimsoll2{
+  margin-top: 70px;
+  width: 38%;
+}
 .plimsvg{
   z-index: -1;
 }
 /*Convers & Dassler*/
 .Two{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin: 150px auto;
@@ -137,16 +141,16 @@
   font-size: 120px;
 }
 .convers-img{
-  width: 60%;
+  width: 50%;
 }
 .dassler-img{
-  width: 80%;
+  width: 70%;
 }
 
 /*Nike*/
 .Three{
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
   height: 730px;
   display: flex;
   flex-direction: column;
@@ -191,7 +195,6 @@
 
 /*End*/
 .Four{
-  margin: 100px 0px;
   height: 730px;
   display: flex;
   flex-direction: column;

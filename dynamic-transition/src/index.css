@@ -24,7 +24,12 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+h1{
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 180px;
+  color: #8D8D8D;
+  opacity: 40%;
+}
 h2{
   font-family: "Bropella",sans-serif;
   color: #6E4E3A;

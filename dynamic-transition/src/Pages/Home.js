@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import Aj1 from '../assets/AJ1.png';
 import Plimsoll from '../assets/pimsolls.png';
 import Convers from '../assets/Convers.png';
@@ -11,6 +12,7 @@ import Jordanicon from '../assets/Jordanicon.svg';
 import Jordan5 from '../assets/Jordan5.svg';
 import Title  from '../components/Title.js';
 import Sneakers from '../components/Sneakers.js';
+import Nav from '../components/Nav.js';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
@@ -18,10 +20,11 @@ import Typewriter from 'typewriter-effect';
 
 function Home() {
 
+    const parallaxRef = useRef(null);
   return (
     <>
-        <Parallax pages={5} style={{ top: '0', left: '0' }}>
-            <section className='intro'>
+        <Parallax pages={4.8} style={{ top: '0', left: '0' }} ref={parallaxRef}>
+            <section className='intro' data-offset="0">
                 <ParallaxLayer offset={0.4} speed={0.2} className='background-first-shoe'>
                     <h1>AIR JORDAN 1</h1>
                 </ParallaxLayer>
@@ -36,7 +39,7 @@ function Home() {
                 </ParallaxLayer>   
             </section>
             <ParallaxLayer offset={1} speed={0.9}>
-                <section className='One'>
+                <section className='One' data-offset="0.9">
                     <div className='first-shoe'>
                     <h2>
                         <Typewriter
@@ -62,6 +65,9 @@ function Home() {
                         whileHover={{ scale: 1.4, rotate: 360, transition: { duration: 0.6 }}}
                         
                     />
+                    <ParallaxLayer speed={0.2} className='plimsoll-txt'>
+                        <h1>PLIMSOLL</h1>
+                    </ParallaxLayer> 
                     <p>The first "sneaker" originated from the Plimsoll shoe, introduced by the Liverpool Rubber Company. These rubber-soled shoes had a canvas upper and were primarily used for sports and leisure. They were called "plimsolls" because of the horizontal line on the sole, which resembled the Plimsoll line on a ship’s hull.</p>
                     </div>
                 </section>
@@ -70,7 +76,7 @@ function Home() {
                 <img src={Plimsollsvg} alt="plimsoll" className='plimsoll'/>
             </ParallaxLayer>
             <ParallaxLayer offset={1.99} speed={0.9}>
-                <section className='Two'>
+                <section className='Two' data-offset="1.64">
                         <div className='convers'>
                             <h2>1917</h2>
                             <motion.img 
@@ -114,26 +120,10 @@ function Home() {
                 <img src={Conversicon} alt="Convers" className='conversicon'/>
             </ParallaxLayer>
             <ParallaxLayer offset={2.8} speed={0.9}>
-                <section className='Three'>
+                <section className='Three' data-offset="2.4">
                     <div className='nike'>
                     <div className='txt'>
-                        <h2>
-                            <Typewriter
-                            options={{
-                                autoStart: true,
-                                loop: true, 
-                            }}
-                            onInit={(typewriter) => {
-                                typewriter
-                                .typeString('1960s') 
-                                .pauseFor(3000) 
-                                .deleteAll() 
-                                .typeString('Nike') 
-                                .pauseFor(4000) 
-                                .start(); 
-                            }}
-                            />
-                        </h2>
+                        <h2>1960s</h2>
                         <h3>Nike (Blue Ribbon Sports)</h3>
                         <p>Originally founded as Blue Ribbon Sports in 1964, Nike rebranded in 1971. Nike's introduction of the waffle sole in 1974 revolutionized running shoes, with its lightweight design and improved traction. The "swoosh" logo and the "Just Do It" campaign helped establish Nike as a global icon in sneaker culture.</p>
                     </div>
@@ -181,7 +171,7 @@ function Home() {
                 <img src={Jordanicon} alt="Jordan icon"/>
             </ParallaxLayer>
             <ParallaxLayer offset={3.2} speed={0.9}>
-                <section className='Four'>
+                <section className='Four' data-offset="3.1">
                     <div className='last-shoe'>
                         <h2>
                             <Typewriter
@@ -207,11 +197,17 @@ function Home() {
                             whileHover={{ scale: 1.3, rotate: 360, transition: { duration: 0.4 }}}   
                         />  
                         <p>By the 2010s, sneaker culture exploded globally, fueled by collaborations between brands, designers, and artists. The rise of sneaker resale platforms, where limited-edition shoes could sell for thousands, turned sneakers into highly sought-after collectibles.</p>
+                        <ParallaxLayer speed={0.3} className='nocta-txt'>
+                            <h1>HOT STEP 2</h1>
+                        </ParallaxLayer> 
                     </div>
                 </section>
             </ParallaxLayer>
             <ParallaxLayer offset={2.9} speed={0.6} className='jordan5'>
                 <img src={Jordan5} alt="plimsoll"/>
+            </ParallaxLayer>
+            <ParallaxLayer offset={3.99} speed={0.6}>
+                <Nav parallaxRef={parallaxRef}/>
             </ParallaxLayer>
         </Parallax>
     </>

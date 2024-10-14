@@ -46,7 +46,7 @@ function Title() {
 
   return (
     <div className="top">
-      <h1 ref={titleRef}></h1>
+      <h2 ref={titleRef}></h2>
     </div>
   );
 }

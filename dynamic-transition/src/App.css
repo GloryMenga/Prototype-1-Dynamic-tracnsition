@@ -16,12 +16,7 @@
   max-width: 100%;
   max-height: 100%;
 }
-.background-first-shoe h1{
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 180px;
-  color: #8D8D8D;
-  opacity: 40%;
-}
+
 .cover{
   height: 100%;
   position: absolute;
@@ -39,7 +34,7 @@
   margin-top: 30px;
   padding-top: 50px;
 }
-.top h1{
+.top h2{
   font-family: "Bropella",sans-serif;
   color: #6E4E3A;
   font-size: 80px;
@@ -47,7 +42,7 @@
   display: inline;
   position: relative;
 }
-.top h1::after {
+.top h2::after {
   content: ""; 
   display: inline-block;
   width: 3px; 
@@ -105,6 +100,12 @@
   width: 38%;
 }
 .plimsvg{
+  z-index: -1;
+}
+.plimsoll-txt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: -1;
 }
 /*Convers & Dassler*/
@@ -230,4 +231,47 @@
 .jordan5{
   z-index: -2;
   margin-left: 54%;
+}
+.nocta-txt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 720px;
+  z-index: -1;
+}
+/*Nav*/
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%;
+  height: 100vh;
+}
+.end h2{
+  margin-bottom: 100px;
+}
+.menus{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+.menus li{
+  list-style: none;
+}
+
+.menus a{
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(42, 42, 42);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.menus a:hover{
+  font-size: 24px;
+  font-weight: 1000;
+  color: #755844;
 }

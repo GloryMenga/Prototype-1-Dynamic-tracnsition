@@ -210,7 +210,7 @@ function Home() {
             <ParallaxLayer offset={3.2} speed={0.9}>
                 <section className='Four' data-offset="3.1">
                     <div className='last-shoe'>
-                        <h2>Nike x Nocta</h2>
+                        <h2>2010s</h2>
                         <motion.img 
                             src={Nocta} 
                             alt="Nocta hot step 2" 

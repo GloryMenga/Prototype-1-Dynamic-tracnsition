@@ -15,7 +15,9 @@ import Sneakers from '../components/Sneakers.js';
 import Nav from '../components/Nav.js';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { motion } from "framer-motion";
+import Fade from "react-reveal/Fade"; 
 import Typewriter from 'typewriter-effect';
+import Cursor from '../components/Cursor.js';
 
 
 function Home() {
@@ -23,6 +25,7 @@ function Home() {
     const parallaxRef = useRef(null);
   return (
     <>
+        <Cursor />
         <Parallax pages={4.8} style={{ top: '0', left: '0' }} ref={parallaxRef}>
             <section className='intro' data-offset="0">
                 <ParallaxLayer offset={0.4} speed={0.2} className='background-first-shoe'>
@@ -35,7 +38,9 @@ function Home() {
                     <Title />
                 </ParallaxLayer>
                 <ParallaxLayer offset={0.3} speed={0.5}>
-                    <img src={Aj1} alt="Air jordan 1" className='aj1'/>
+                    <Fade bottom duration={1500}>
+                        <img src={Aj1} alt="Air Jordan 1" className='aj1' />
+                    </Fade>
                 </ParallaxLayer>   
             </section>
             <ParallaxLayer offset={1} speed={0.9}>
@@ -173,23 +178,7 @@ function Home() {
             <ParallaxLayer offset={3.2} speed={0.9}>
                 <section className='Four' data-offset="3.1">
                     <div className='last-shoe'>
-                        <h2>
-                            <Typewriter
-                            options={{
-                                autoStart: true,
-                                loop: true, 
-                            }}
-                            onInit={(typewriter) => {
-                                typewriter
-                                .typeString('2010s') 
-                                .pauseFor(2000) 
-                                .deleteAll() 
-                                .typeString('Nike X Nocta') 
-                                .pauseFor(3000) 
-                                .start(); 
-                            }}
-                            />
-                        </h2>
+                        <h2>Nike x Nocta</h2>
                         <motion.img 
                             src={Nocta} 
                             alt="Nocta hot step 2" 

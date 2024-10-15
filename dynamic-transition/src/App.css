@@ -242,7 +242,7 @@
 /*Nav*/
 .nav{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
@@ -275,3 +275,5 @@
   font-weight: 1000;
   color: #755844;
 }
+
+

@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# React - Name project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prototype-1-Dynamic-tracnsition 💻
 
-## Available Scripts
+Link: https://github.com/GloryMenga/Prototype-1-Dynamic-tracnsition
 
-In the project directory, you can run:
+# Set up project✅
 
-### `npm start`
+## Clone Repository
+https://github.com/GloryMenga/Prototype-1-Dynamic-tracnsition.git
+⬇️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Navigate to the project folder
+⬇️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+cd dynamic-transition
+⬇️
 
-### `npm test`
+# install dependencies (libraries)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+➡️ npm install 
 
-### `npm run build`
+➡️ npm install react-spring
+➡️ npm install @react-spring/parallax
+➡️ npm install @react-spring/web
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+➡️ npm install typewriter-effect
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+➡️ npm install framer-motion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+➡️ npm install gsap
 
-### `npm run eject`
+➡️ npm install react-reveal
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Documentation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## References (Used libraries)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### React-spring
 
-## Learn More
+https://www.react-spring.dev/docs/components/parallax
+https://www.npmjs.com/package/react-parallax
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Reason: The entire page is in a parallaxlayer. I gave different speed on each section of the page and i also recreated a parallax effect on the first section.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Typewriter JS
 
-### Code Splitting
+https://www.npmjs.com/package/typewriter-effect
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Reason: Typewritting effect on every h2.
 
-### Analyzing the Bundle Size
+### React-reveal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+https://blog.openreplay.com/doing-animations-with-react-reveal/
 
-### Making a Progressive Web App
+Reason: Used for the fade in animation on the first sneaker on my page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### GSAP
 
-### Advanced Configuration
+https://gsap.com/community/forums/topic/40627-typewriter-animation/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Reason: For the first title of the page i used this typewriter library, so i could make the effect of back spacing a part of the sentence. 
 
-### Deployment
+https://gsap.com/community/forums/topic/25988-magnetic-button-with-gsap/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Reason: Magnetic effect on every menu of the nav at the bottom of the page.
 
-### `npm run build` fails to minify
+https://codepen.io/supah/pen/aaKgMr
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Reason: Following circle on the cursor.
+
+### Framer-motion
+
+https://www.framer.com/motion/
+https://codesandbox.io/p/sandbox/81jzd?file=%2Fsrc%2FExample.tsx
+
+Reason: Spinning effect when you hover on some shoes.
+
+https://www.framer.com/motion/examples/
+
+Reason: Tilting effect on the background sneakers in grey.
+
+License📜
+This project is for educational purposes only and is not licensed for external use, modification, or distribution.
+
+Contact Information 🪪
+Feel free to contact me through the following email for further questions:
+
+[mengaglory@gmail.com]

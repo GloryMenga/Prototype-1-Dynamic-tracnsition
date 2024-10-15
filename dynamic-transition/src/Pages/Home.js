@@ -67,7 +67,7 @@ function Home() {
                         src={Plimsoll} 
                         alt="plimsoll" 
                         className='plimsoll'
-                        whileHover={{ scale: 1.4, rotate: 360, transition: { duration: 0.6 }}}
+                        whileHover={{ scale: 1.4, transition: { duration: 0.2, type: "spring", stiffness: 500, damping: 12 }}}
                         
                     />
                     <ParallaxLayer speed={0.2} className='plimsoll-txt'>
@@ -78,7 +78,18 @@ function Home() {
                 </section>
             </ParallaxLayer>
             <ParallaxLayer offset={0.98} speed={0.4} className='plimsvg'>
-                <img src={Plimsollsvg} alt="plimsoll" className='plimsoll'/>
+                <motion.img 
+                    src={Plimsollsvg} 
+                    alt="plimsoll" 
+                    animate={{ rotate: [0, 10, -10, 0] }}
+                    transition={{
+                        duration: 1,
+                        repeat: Infinity, 
+                        ease: [0.42, 0, 0.58, 1], 
+                        delay: 0.1
+                    }}
+                    className='plimsoll'
+                />
             </ParallaxLayer>
             <ParallaxLayer offset={1.99} speed={0.9}>
                 <section className='Two' data-offset="1.64">
@@ -122,7 +133,18 @@ function Home() {
                 </section>
             </ParallaxLayer>
             <ParallaxLayer offset={1.5} speed={0.7}>
-                <img src={Conversicon} alt="Convers" className='conversicon'/>
+                <motion.img 
+                    src={Conversicon} 
+                    alt="Convers" 
+                    animate={{ rotate: [0, 10, -10, 0] }}
+                    transition={{
+                        duration: 1.6,
+                        repeat: Infinity, 
+                        ease: [0.42, 0, 0.58, 1], 
+                        delay: 0.2
+                    }}
+                    className='conversicon'
+                />
             </ParallaxLayer>
             <ParallaxLayer offset={2.8} speed={0.9}>
                 <section className='Three' data-offset="2.4">
@@ -173,7 +195,17 @@ function Home() {
                 </section>
             </ParallaxLayer>
             <ParallaxLayer offset={2} speed={0.8} className='jordanicon'>
-                <img src={Jordanicon} alt="Jordan icon"/>
+                <motion.img 
+                    src={Jordanicon} 
+                    alt="Jordan icon" 
+                    animate={{ rotate: [0, 12, -12, 0] }}
+                    transition={{
+                        duration: 1.4,
+                        repeat: Infinity, 
+                        ease: [0.42, 0, 0.58, 1], 
+                        delay: 0.4
+                    }}
+                />
             </ParallaxLayer>
             <ParallaxLayer offset={3.2} speed={0.9}>
                 <section className='Four' data-offset="3.1">
@@ -183,7 +215,7 @@ function Home() {
                             src={Nocta} 
                             alt="Nocta hot step 2" 
                             className='sneaker'
-                            whileHover={{ scale: 1.3, rotate: 360, transition: { duration: 0.4 }}}   
+                            whileHover={{ scale: 1.3, transition: { duration: 0.2, type: "spring", stiffness: 500, damping: 12 }}}   
                         />  
                         <p>By the 2010s, sneaker culture exploded globally, fueled by collaborations between brands, designers, and artists. The rise of sneaker resale platforms, where limited-edition shoes could sell for thousands, turned sneakers into highly sought-after collectibles.</p>
                         <ParallaxLayer speed={0.3} className='nocta-txt'>
@@ -193,7 +225,17 @@ function Home() {
                 </section>
             </ParallaxLayer>
             <ParallaxLayer offset={2.9} speed={0.6} className='jordan5'>
-                <img src={Jordan5} alt="plimsoll"/>
+            <motion.img 
+                src={Jordan5} 
+                alt="Jordan 5" 
+                animate={{ rotate: [0, 15, -15, 0] }}
+                transition={{
+                    duration: 2,
+                    repeat: Infinity, 
+                    ease: [0.42, 0, 0.58, 1], 
+                }}
+                className='jordan5-svg'
+            />
             </ParallaxLayer>
             <ParallaxLayer offset={3.99} speed={0.6}>
                 <Nav parallaxRef={parallaxRef}/>

@@ -276,4 +276,7 @@
   color: #755844;
 }
 
-
+/*Cursor*/
+cursor{
+  z-index: -2;
+}

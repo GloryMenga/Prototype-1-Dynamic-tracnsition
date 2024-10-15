@@ -28,13 +28,14 @@ const Cursor = () => {
         position: 'fixed',
         top: 0,
         left: 0,
-        width: '35px',
-        height: '35px',
+        width: '30px',
+        height: '30px',
         backgroundColor: '#733C14',
         borderRadius: '50%',
         pointerEvents: 'none',
         zIndex: 9999,
       }}
+      className='cursor'
     />
   );
 };

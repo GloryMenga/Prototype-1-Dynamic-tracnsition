@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Typewriter from 'typewriter-effect';
 import gsap from 'gsap';
 
 function Nav({ parallaxRef }) {
@@ -54,7 +55,23 @@ function Nav({ parallaxRef }) {
     return (
         <div className="nav">
             <div className="end">
-                <h2>Going back?</h2>
+                <h2>
+                    <Typewriter
+                    options={{
+                        autoStart: true,
+                        loop: true, 
+                    }}
+                    onInit={(typewriter) => {
+                        typewriter
+                            .typeString('END') 
+                            .pauseFor(1000) 
+                            .deleteAll() 
+                            .typeString('Going back?') 
+                            .pauseFor(2000) 
+                            .start(); 
+                        }}
+                    />
+                </h2>
             </div>
             <div className="menus">
                 <li ref={(el) => (menuItemsRef.current[0] = el)} onClick={() => handleScroll('intro')}><a href="#">Home</a></li>
